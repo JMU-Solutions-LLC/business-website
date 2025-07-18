@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /linked-role
+Disallow: /linked-role.html
