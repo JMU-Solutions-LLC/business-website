@@ -1,63 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JMU Solutions LLC</title>
-    <meta name="description" content="JMU Solutions LLC – Discord bot development done right. Launching January 1 with scalable solutions, fast delivery, and tailored pricing." />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-white text-gray-900">
-    <header class="text-center py-10 px-4 border-b">
-      <h1 class="text-4xl font-semibold mb-2">JMU Solutions LLC</h1>
-      <nav class="mt-4 space-x-4 text-sm">
-        <a href="/" class="text-gray-600 hover:text-black">Home</a>
-        <a href="/terms-of-service" class="text-gray-600 hover:text-black">Terms of Service</a>
-        <a href="/privacy-policy" class="text-black font-semibold">Privacy Policy</a>
-        <a href="https://status.jmusolutionsllc.com/" target="_blank" class="text-black font-semibold">Status</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JMU Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0066ff;
+      --accent-color: #ff7a00;
+      --background: #f8f9fc;
+      --text-color: #333333;
+      --card-bg: #ffffff;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --transition: 0.3s ease-in-out;
+    }
 
-    <main class="text-center px-6">
-      <section class="max-w-xl mx-auto py-10">
-        <h2 class="text-2xl font-medium mb-4">Our Company</h2>
-        <p class="text-lg text-gray-600 max-w-xl mx-auto">
-          Launching January 1 — a new standard in Discord bot development. Clean code. Custom features. Built for communities. Powered by speed and flexibility.
-        </p>
-        <a
-          href="mailto:hello@jmusolutionsllc.com"
-          class="inline-block mt-8 bg-black text-white text-sm px-6 py-3 rounded-2xl hover:bg-gray-900 transition"
-        >
-          Contact Us
-        </a>
-      </section>
-      
-      <section class="max-w-xl mx-auto py-10">
-        <h2 class="text-2xl font-medium mb-4">About Us</h2>
-        <p class="text-gray-700">
-          JMU Solutions LLC is a registered software development company in New Mexico and New York. We specialize in building high-performance, scalable Discord bots built for your community or business. Whether you're managing a growing community or a business, our bots are built to serve real needs — fast, reliable, and built for performance.
-        </p>
-      </section>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-      <section class="max-w-xl mx-auto py-10">
-        <h2 class="text-2xl font-medium mb-4">Coming January 1, 2026</h2>
-        <p class="text-gray-700">
-          Our full launch will feature a ticket-based order system, real-time tracking, and flexible pricing tailored to your needs. We’re positioned to serve both individual creators and enterprise clients — with negotiable rates, transparent service, and unmatched speed.
-        </p>
-      </section>
-    </main>
+    body {
+      background: var(--background);
+      color: var(--text-color);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-    <footer class="text-center text-sm text-gray-500 py-10 border-t">
-      &copy; 2025 JMU Solutions LLC. All rights reserved.
-    </footer>
-  </body>
+    header {
+      padding: 1.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary-color);
+    }
+
+    nav a {
+      color: var(--text-color);
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      padding: 6rem 2rem;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') no-repeat center center/cover;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      opacity: 0.85;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      transition: transform var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .cta button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .cta button:hover {
+      background: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      font-size: 0.9rem;
+      background: #f0f1f5;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JMU Solutions</h1>
+<nav class="mt-4 flex justify-center flex-wrap gap-6 text-sm font-medium text-gray-600">
+  <a href="/" class="hover:text-black transition">Home</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms-of-service.html">Terms of Service</a>
+  <a href="https://status.jmusolutionsllc.com/" target="_blank" class="hover:text-black transition">Status</a>
+</nav>
+
+  </header>
+
+  <section class="hero">
+    <h2>Dedicated to the craft</h2>
+    <p>At JMU Solutions, we power through every task you put through us, we will show amazing dedication towards you and your project! Place an order with us today!</p>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About JMU Solutions</h3>
+    <div class="card">
+      <p>Founded by Jose Moran Urena, JMU Solutions LLC your home for all company needs. Do you need any services? We got you covered. Our team of dedicated professionals will assist you.</p>
+      <p>JMU Solutions is a licensed LLC forming a orgin in New Mexico and we own a foreign LLC in the state of New York!</p>
+    </div>
+  </section>
+
+  <section class="section" id="solutions">
+    <h3>Services | Real Solutions & Real Results</h3>
+    <div class="card">
+      <p><strong>Discord Bots:</strong>Do you want a discord bot? Our bots are safe, secure, and protected by our dedicated systems! We want to work with you and make your dream discord bot.</p>
+      <p><strong>Websites:</strong> Our services offer a team of dedicated website professionals to make your dream website. At JMU Solutions, we are dedicated to have your company make their dream website.</p>
+      <p><strong>User Interface:</strong> Do you neeed UI (User Interface) for your next plan? Contact us. Parker is a talented roblox User Interface designer who will certainly help you!</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Get In Touch</h3>
+    <div class="card">
+      <p>Have a project in mind? Contact us, we are super happy to help! Lets make your experience better!</p>
+      <p>Email us at <a href="mailto:hello@jmusolutionsllc.com" style="color: var(--primary-color); text-decoration: none;">info@jmusolutions.com</a> or click below to start the conversation.</p>
+    </div>
+    <div class="cta">
+      <button onclick="window.location.href='mailto:hello@jmusolutionsllc.com'">Start a Project</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 JMU Solutions LLC | All rights reserved.
+  </footer>
+</body>
 </html>

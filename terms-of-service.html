@@ -5,70 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service – JMU Solutions LLC</title>
   <meta name="description" content="Terms of Service for JMU Solutions LLC" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #0066ff;
+      --accent-color: #ff7a00;
+      --background: #f8f9fc;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 2rem 4rem;
+      background: #fff;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #666;
+      margin: 0 1rem;
+      font-size: 0.9rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 4rem auto;
+      background: var(--card-bg);
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    main h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--primary-color);
+    }
+
+    main h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    main p, main ul {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      list-style-type: disc;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #f0f1f5;
+      color: #666;
     }
   </style>
 </head>
-<body class="bg-white text-gray-900">
-  <header class="text-center py-10 px-4 border-b">
-    <h1 class="text-4xl font-semibold mb-2">JMU Solutions LLC</h1>
-    <nav class="mt-4 space-x-4 text-sm">
-      <a href="/" class="text-gray-600 hover:text-black">Home</a>
-      <a href="/terms-of-service" class="text-black font-semibold">Terms of Service</a>
-      <a href="/privacy-policy" class="text-gray-600 hover:text-black">Privacy Policy</a>
-      <a href="https://status.jmusolutionsllc.com/" target="_blank" class="text-black font-semibold">Status</a>
+<body>
+  <header>
+    <h1>JMU Solutions LLC</h1>
+    <nav>
+      <a href="/">Return</a>
     </nav>
   </header>
 
-  <main class="max-w-3xl mx-auto px-6 py-10 text-left">
-    <h2 class="text-2xl font-semibold mb-6">Terms of Service</h2>
+  <main>
+    <h2>Terms of Service</h2>
+    <p><strong>Effective Date:</strong> January 1, 2026<br /><strong>Last Updated:</strong> July 2025</p>
 
-    <p class="mb-4 text-gray-700">Effective Date: January 1, 2026<br />Last Updated: July 2025</p>
-
-    <p class="mb-6 text-gray-700">
+    <p>
       These Terms of Service ("Terms") constitute a binding agreement between you ("Client", "User", or "You") and JMU Solutions LLC, a New York-registered foreign S-corporation headquartered in New Mexico.
       By accessing or using our Discord bot(s), services, website, or related tools ("Services"), you agree to be bound by these Terms.
     </p>
 
-    <h3 class="text-xl font-medium mt-8 mb-2">1. Services Provided</h3>
-    <p class="text-gray-700 mb-4">JMU Solutions LLC provides software development services related to Discord bots, automation, and integrations. These services may be offered through a ticketing system within Discord and are subject to project-specific agreements.</p>
+    <h3>1. Services Provided</h3>
+    <p>JMU Solutions LLC provides software development services related to Discord bots, automation, and integrations. These services may be offered through a ticketing system within Discord and are subject to project-specific agreements.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">2. Eligibility</h3>
-    <p class="text-gray-700 mb-4">You must be at least 13 years old and comply with Discord's Terms of Service. If you're representing an entity, you affirm that you have authority to bind it.</p>
+    <h3>2. Eligibility</h3>
+    <p>You must be at least 13 years old and comply with Discord's Terms of Service. If you're representing an entity, you affirm that you have authority to bind it.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">3. Order Terms & Invoicing</h3>
-    <p class="text-gray-700 mb-4">Orders are initiated via Discord or written communication. Invoices are generated through Stripe and delivered via Discord or email. Payment is due within three (3) calendar days unless otherwise agreed.</p>
+    <h3>3. Order Terms & Invoicing</h3>
+    <p>Orders are initiated via Discord or written communication. Invoices are generated through Stripe and delivered via Discord or email. Payment is due within three (3) calendar days unless otherwise agreed.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">4. Refund Policy</h3>
-    <p class="text-gray-700 mb-4">Refunds are granted at our discretion. Once development has begun or deliverables are issued, refunds may no longer be available.</p>
+    <h3>4. Refund Policy</h3>
+    <p>Refunds are granted at our discretion. Once development has begun or deliverables are issued, refunds may no longer be available.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">5. User Conduct</h3>
-    <p class="text-gray-700 mb-4">Users may not reverse-engineer, resell, or exploit our services; nor may they use them for illegal, abusive, or harassing activity.</p>
+    <h3>5. User Conduct</h3>
+    <p>Users may not reverse-engineer, resell, or exploit our services; nor may they use them for illegal, abusive, or harassing activity.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">6. Intellectual Property</h3>
-    <p class="text-gray-700 mb-4">Unless otherwise stated in writing, all custom software and deliverables remain the intellectual property of JMU Solutions LLC.</p>
+    <h3>6. Intellectual Property</h3>
+    <p>Unless otherwise stated in writing, all custom software and deliverables remain the intellectual property of JMU Solutions LLC.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">7. Disclaimer of Warranties</h3>
-    <p class="text-gray-700 mb-4">Services are provided "as is" with no express or implied warranties. We make no guarantee of uptime or compatibility.</p>
+    <h3>7. Disclaimer of Warranties</h3>
+    <p>Services are provided "as is" with no express or implied warranties. We make no guarantee of uptime or compatibility.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">8. Limitation of Liability</h3>
-    <p class="text-gray-700 mb-4">We are not liable for indirect or consequential damages arising from your use of our services.</p>
+    <h3>8. Limitation of Liability</h3>
+    <p>We are not liable for indirect or consequential damages arising from your use of our services.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">9. Governing Law</h3>
-    <p class="text-gray-700 mb-4">These Terms are governed by the laws of the State of New York, United States.</p>
+    <h3>9. Governing Law</h3>
+    <p>These Terms are governed by the laws of the State of New York, United States.</p>
 
-    <h3 class="text-xl font-medium mt-6 mb-2">10. Modifications</h3>
-    <p class="text-gray-700 mb-4">We reserve the right to update these Terms at any time. Continued use constitutes acceptance of the revised terms.</p>
+    <h3>10. Modifications</h3>
+    <p>We reserve the right to update these Terms at any time. Continued use constitutes acceptance of the revised terms.</p>
   </main>
 
-  <footer class="text-center text-sm text-gray-500 py-10 border-t">
+  <footer>
     &copy; 2025 JMU Solutions LLC. All rights reserved.
   </footer>
 </body>
