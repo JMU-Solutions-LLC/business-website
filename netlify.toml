@@ -2,3 +2,8 @@
   from = "/discord"
   to = "https://discord.gg/xgG9B6vuDf"
   status = 301
+
+[[redirects]]
+  from = "/climate"
+  to = "https://climate.stripe.com/gxqCaI"
+  status = 301
